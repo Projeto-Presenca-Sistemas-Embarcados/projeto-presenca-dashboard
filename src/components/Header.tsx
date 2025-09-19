@@ -1,6 +1,8 @@
+import "./css/Header.css";
+
 export default function Header() {
   return (
-    <header>
+    <header className="container">
       <h1>Projeto Presença Dashboard</h1>
     </header>
   );
