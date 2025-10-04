@@ -1,0 +1,19 @@
+/* Estilos Globais */
+
+:root {
+  --sidebar-w: 400px;
+  --yellow: #FFB81C;
+  --muted: #e9e9e9;
+  --text: #111;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, Roboto, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+

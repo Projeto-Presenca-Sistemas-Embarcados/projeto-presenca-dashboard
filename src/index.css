@@ -1,16 +1,19 @@
-* {
-  font-family: sans-serif;
+/* Layout Geral */
+
+@import 'variables.css';
+
+.app-root {
+    display: flex;
+    min-height: 100vh;
 }
 
-html,
-body {
-  overflow-x: hidden;
+.content-area {
+    flex: 1;
+    background: #f0f0f0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100dvh;
+/* Responsividade Básica */
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+    .portal-teacher { display: none; }
 }
