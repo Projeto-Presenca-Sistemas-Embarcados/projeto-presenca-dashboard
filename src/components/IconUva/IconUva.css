@@ -1,0 +1,13 @@
+.icon-instituicao {
+  display: flex;
+  justify-content: flex-start; /* puxa para a esquerda */
+  align-items: center;
+  margin-top: 4rem;
+  margin-right: 10rem;
+}
+
+.icon-instituicao img {
+  height: clamp(5em, 8vw, 10em);
+  width: auto;
+  object-fit: contain;
+}
