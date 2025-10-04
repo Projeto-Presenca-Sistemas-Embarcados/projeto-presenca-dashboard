@@ -1,0 +1,37 @@
+.portal-dashboard {
+    position: relative;
+    background: var(--yellow);   
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.portal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portal-main {
+    padding-top: 40px;
+}
+
+.portal-main h1 {
+    font-size: clamp(24px, 4vw, 100px);
+    font-weight: normal;
+    color: var(--text);
+    margin: 0;
+    white-space: pre-line; 
+}
+
+
+.portal-teacher {
+    position: absolute;
+    right: 6%;
+    bottom: 0; 
+    height: auto;
+    width: auto;
+    max-height: 60vh;
+    width: auto;
+}
+
