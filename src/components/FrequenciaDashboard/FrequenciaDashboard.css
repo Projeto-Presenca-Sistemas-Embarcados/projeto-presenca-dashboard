@@ -1,0 +1,29 @@
+.frequencia-dashboard {
+    background: #d8d8d8;
+    height: 100%;
+    padding: 20px;
+}
+
+.freq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.freq-title {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.freq-panel {
+    margin-top: 24px;
+}
+
+.freq-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
