@@ -15,7 +15,7 @@ export default function FrequenciaDashboard(): JSX.Element {
                 </div>
             </header>
 
-            <div className="freq-title">Frequência dos Mexicanos</div>
+            <div className="freq-title">Frequência dos Alunos</div>
 
             <div className="freq-panel">
                 <CrudAlunos />
