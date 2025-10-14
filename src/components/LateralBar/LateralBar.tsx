@@ -24,7 +24,7 @@ export default function LateralBar({ active, onSelect }: Props) {
 
 
                 <button className={`nav-btn ${active === 'frequencia' ? 'active' : ''}`} onClick={() => onSelect('frequencia')}>
-                    Frequência dos Mexicanos
+                    Frequência dos Alunos
                 </button>
             </nav>
         </aside>
