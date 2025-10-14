@@ -1,26 +1,88 @@
 .crud-placeholder {
   display: flex;
   justify-content: center;
+  padding: 20px 0;
 }
 
 .crud-box {
   background: #fff;
   border-radius: 12px;
-  padding: 18px;
+  padding: 24px;
   width: 100%;
-  max-width: 760px;
-  min-height: 320px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .crud-header {
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  color: #222;
 }
 
-.row-placeholder {
-  color: #777;
-  padding: 20px;
-  border: 1px dashed #eee;
-  border-radius: 8px;
+.crud-body {
+  overflow-x: auto; /* permite scroll horizontal em telas pequenas */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+tbody td {
+  padding: 12px 16px;
+  color: #555;
+  font-size: 0.92rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Zebra rows */
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Hover nas linhas */
+tbody tr:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.2s;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  thead {
+    display: none; /* esconde cabeçalho em mobile */
+  }
+
+  tbody td {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: inline-block;
+    width: 120px;
+  }
+
+  tbody tr {
+    margin-bottom: 16px;
+    display: block;
+    border-bottom: 2px solid #eee;
+  }
 }
